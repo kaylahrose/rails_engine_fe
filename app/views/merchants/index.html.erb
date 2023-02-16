@@ -1,0 +1,5 @@
+<section id="merchants">
+  <% @merchants.each do |merchant| %>
+    <%= link_to merchant[:attributes][:name], "/merchants/#{merchant[:id]}" %>
+  <% end %>
+</section>
